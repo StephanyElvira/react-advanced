@@ -108,7 +108,7 @@ export const EventsPage = () => {
         onAddEvent={handleAddEvent}
       />
 
-      <SimpleGrid columns={[1, 2, 3, 4]} spacing={[4, 6, 8, 10]} align="start">
+      <SimpleGrid columns={[1, 2, 2, 4]} spacing={[4, 6, 8, 10]} align="start">
         {filteredEvents.map((event) => (
           <Link to={`event/${event.id}`} key={event.id}>
             <Card
@@ -136,11 +136,11 @@ export const EventsPage = () => {
                 gap={3}
               >
                 <Heading
-                  size="lg"
+                  size="md"
                   color="#DC5F00"
-                  textTransform="capitalize"
-                  fontFamily="'Meow Script', serif"
-                  fontWeight="regular"
+                  textTransform="uppercase"
+                  fontFamily="serif"
+                  fontWeight="bold"
                   pb={1}
                   _hover={{
                     transform: "scale(0.75)",
